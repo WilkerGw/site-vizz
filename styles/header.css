@@ -98,6 +98,7 @@ header ul li:hover {
 
     .header__menu__principal {
         gap: 0.5rem;
+        flex-direction: column;
     }
 
     .header__menu__principal, .header__icone__whats {
@@ -142,9 +143,5 @@ header ul li:hover {
     }
 
 }
- 
-/* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
 
-}
   
