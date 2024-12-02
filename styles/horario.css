@@ -1,0 +1,57 @@
+
+.horario__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    font-family: 'Poiret One', sans-serif;
+    padding-block: 2rem;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.horario p {
+    /*background-color: var(--cinza-principal);*/
+    width: 60%;
+    padding: 1rem;
+    color: var(--cinza-principal);
+    border-radius: .3rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+span {
+    color: #ecbc00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.video {
+    width: 50%;
+}
+
+.video iframe {
+    border-radius: .3rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+@media (max-width: 600px) {
+    .horario__container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .horario,.horario p, .video, .video iframe {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .horario p {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,25 @@
+:root {
+    --cinza-principal: #2e2e2e;
+    --amarelo-principal: #ffdd56;
+    --amarelo-submenu: #f4e6af;
+    --cor-fundo: #eeeeee;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+main {
+    margin-top: 69.75px;
+    width: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+h1 {
+    opacity: 80%;
+    font-size: 1.8rem;
+}
+
+section {
+    background-color: var(--cor-fundo);
+}
