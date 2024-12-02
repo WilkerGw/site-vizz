@@ -1,0 +1,42 @@
+#contato__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+    gap: 2rem;
+    padding-block: 10rem;
+}
+
+#contato__container img {
+    width: 2.5rem;
+}
+
+#contato__container > p {
+    font-size: 1.5rem;
+}
+
+.contato {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato__whats p, 
+.contato__insta p, 
+.contato__face p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    margin-inline: 1rem;
+}
+
+.contato__whats, 
+.contato__insta, 
+.contato__face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

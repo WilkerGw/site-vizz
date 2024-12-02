@@ -1,0 +1,38 @@
+#endereco__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.icone__mapa {
+    width: 2rem;
+    align-self: center;
+}
+
+#endereco__container iframe {
+    border-radius: .3rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    width: 80%;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.endereco p {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+    #endereco__container iframe {
+        width: 100%;
+        box-shadow: none;
+    }
+}

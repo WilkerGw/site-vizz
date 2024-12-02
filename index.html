@@ -11,32 +11,58 @@
     <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/horario.css">
     <link rel="stylesheet" href="styles/designe.css">
+    <link rel="stylesheet" href="styles/endereco.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="styles/destaque.css">
     <script src="script.js" defer ></script>
     <script src="scripts/menu.js" defer ></script>
     <script src="scripts/sub-menu.js" defer ></script>
     <script src="scripts/carousel.js" defer ></script>
+    <script src="scripts/destaque.js" defer ></script>
 </head>
 <body>
     <header>
         <img src="img/header/header-logo.png" alt="Logotipo da ótica" class="header__logo">
         <ul class="header__menu__principal">
-            <li>Inicio</li>
+            <a href="#main">
+                <li>Inicio</li>
+            </a>
             <li class="li__sol">Óculos Solar</li>
                 <ul class="header__menu__sol">
-                    <li>Todos</li>
-                    <li>Quadrados</li>
-                    <li>Redondos</li>
-                    <li>Gatinho</li>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/" target="_blank">
+                        <li>Todos</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/quadrados/" target="_blank">
+                        <li>Quadrados</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/arredondados/" target="_blank">
+                        <li>Redondos</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/gatinho/" target="_blank">
+                        <li>Gatinho</li>
+                    </a>
                 </ul>
             <li class="li__grau">Armações</li>
                 <ul class="header__menu__grau">
-                    <li>Todas</li>
-                    <li>Quadradas</li>
-                    <li>Redondas</li>
-                    <li>Gatinho</li>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/?mpage=3" target="_blank">
+                        <li>Todas</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-quadradas/" target="_blank">
+                        <li>Quadradas</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-arredondadas/" target="_blank">
+                        <li>Redondas</li>
+                    </a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/armacoes/armacoes-gatinho/" target="_blank">
+                        <li>Gatinho</li>
+                    </a>
                 </ul>
-            <li>Endereço</li>
-            <li>Contato</li>
+            <a href="#endereco__container">
+                <li>Endereço</li>
+            </a>
+            <a href="#contato__container">
+                <li>Contato</li>
+            </a>
             <li class="li__legais">Informações Legais</li>
                 <ul class="header__info__legais">
                     <li>Política de Privacidade</li>
@@ -49,7 +75,7 @@
         <img src="img/icones/menu.png" alt="icone de menu" class="header__icone__menu">
         <img src="img/icones/fechar.png" alt="icone de fechar" class="header__icone__fechar">
     </header>
-    <main>
+    <main id="main">
         <section class="banner__principal__container">
             <img src="img/logos/logo-png.png" alt="Logo da marca Vizz" class="banner__principal__logo">
             <article class="banner__principal__redes">
@@ -64,12 +90,18 @@
         <section class="carousel__promocional__container">
             <div class="carousel">
                 <div class="carousel-track">
-                    <img src="img/banners/1.png" alt="Imagem 1">
-                    <img src="img/banners/2.png" alt="Imagem 2">
-                    <img src="img/banners/3.png" alt="Imagem 3">
-                    <img src="img/banners/1.png" alt="Imagem 1 Clone">
-                    <img src="img/banners/2.png" alt="Imagem 2 Clone">
-                    <img src="img/banners/3.png" alt="Imagem 3 Clone">
+                    <img src="img/banners/1.png" alt="Imagem 1 desk" class="desk">
+                    <img src="img/banners/2.png" alt="Imagem 2 desk" class="desk">
+                    <img src="img/banners/3.png" alt="Imagem 3 desk" class="desk">
+                    <img src="img/banners/4.png" alt="Imagem 4 mobi" class="mobi">
+                    <img src="img/banners/5.png" alt="Imagem 5 mobi" class="mobi">
+                    <img src="img/banners/6.png" alt="Imagem 6 mobi" class="mobi">
+                    <img src="img/banners/1.png" alt="Imagem 1 Clone desk" class="desk">
+                    <img src="img/banners/2.png" alt="Imagem 2 Clone desk" class="desk">
+                    <img src="img/banners/3.png" alt="Imagem 3 Clone desk" class="desk">
+                    <img src="img/banners/4.png" alt="Imagem 4 Clone mobi" class="mobi">
+                    <img src="img/banners/5.png" alt="Imagem 5 Clone mobi" class="mobi">
+                    <img src="img/banners/6.png" alt="Imagem 6 Cçone mobi" class="mobi">
                 </div>
               </div>
         </section>
@@ -78,21 +110,54 @@
             <p>Escolha o o modelo que mais combina com você!</p>
             <div class="designe__img__container">
                 <div>
-                    <a href=""><img src="img/designe/designe1.png" alt="imagem oculos redondo" class="designe__img"></a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/arredondados/" target="_blank"><img src="img/designe/designe1.png" alt="imagem oculos redondo" class="designe__img"></a>
                     <p>Redondos</p>
                 </div>
                 <div>
-                    <a href=""><img src="img/designe/designe2.png" alt="imagem oculos quadrado" class="designe__img"></a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/quadrados/" target="_blank"><img src="img/designe/designe2.png" alt="imagem oculos quadrado" class="designe__img"></a>
                     <p>Quadrados</p>
                 </div>
                 <div>
-                    <a href=""><img src="img/designe/designe3.png" alt="imagem oculos em formato gatinho" class="designe__img"></a>
+                    <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/gatinho/" target="_blank"><img src="img/designe/designe3.png" alt="imagem oculos em formato gatinho" class="designe__img"></a>
                     <p>Gatinho</p>
                 </div>
             </div>
         </section>
+        <section class="destaque__oculos__container">
+            <div class="destaque__titulo">
+                <h1>Óculos de Sol com proteção UV400 Vizz Holanda</h1>
+                <img src="img/destaque/p2.png" alt="imagem modelo oculos de sol Holanda">
+            </div>
+            <div class="destaque__img__container">
+                <div class="destaque__img__extra">
+                    <img src="img/destaque/p3.png" alt="" class="img__extra">
+                    <img src="img/destaque/p8.png" alt="" class="img__extra">
+                    <img src="img/destaque/p4.png" alt="" class="img__extra">
+                    <img src="img/destaque/p7.png" alt="" class="img__extra">
+                    <img src="img/destaque/p5.png" alt="" class="img__extra">
+                    <img src="img/destaque/p6.png" alt="" class="img__extra">
+                </div>
+                <img src="img/destaque/p4.png" alt="" class="img__destaque">
+                <div class="destaque__descricao">
+                    <h3>Óculos de Sol Vizz Holanda - Estilo e Personalidade</h3> <br>
+
+                    <p>Destaque-se com os óculos de sol VizzHolanda! Disponível em armações modernas e ousadas, incluindo tons vibrantes como verde translúcido, rosa pastel e o clássico tartaruga. Esses óculos são perfeitos para quem busca unir estilo único e conforto no dia a dia. Com lentes de alta qualidade, oferecem proteção UV e clareza visual. Ideais para qualquer ocasião, seja para complementar um look casual ou sofisticado.</p>
+
+                    <h3>Características:</h3>
+                    <ul>
+                        <li>Design contemporâneo com armação retangular robusta.</li>
+                        <li>Lentes com proteção UV400.</li>
+                        <li>Disponível em diversas cores para combinar com seu estilo.</li>
+                    </ul><br>
+                    Experimente a fusão perfeita entre moda e funcionalidade com os óculos de sol Vizz Holanda!
+                </div>
+            </div>
+            <img src="img/destaque/p1.png" alt="" class="destaque__img_final">
+            <p>Holanda é o modelo perfeito para quem sabe que óculos de Sol é pra qualquer momento! <br>O queridinho da balada com o melhor preço da região.</p>
+        </section>
         <scetion class="horario__container">
             <article class="horario">
+                <img src="img/icones/relogio.png" alt="icone relogio" class="icone__relogio">
                 <h1>Horario de funcionamento</h1>
                 <p>
                     Segunda à Sexta das <span>10:00</span> às <span>19:00</span><br>
@@ -111,6 +176,40 @@
                 </iframe>
             </article>
         </scetion>
+        <section id="endereco__container">
+            <article class="endereco">
+                <img src="img/icones/mapa.png" alt="" class="icone__mapa">
+                <h1>Endereço</h1>
+                <h2>Nos faça uma visita!</h2>
+                <p>Avenida do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
+                <p>Estamos à <span>200 metros</span> da estação <span><a href="https://maps.app.goo.gl/RDHVWyMvsrASqB5U8" target="_blank">Vila Tolstói</a>.</span> <br> São apenas <span>4 minutos</span> de caminhada.</p>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d116993.37814058634!2d-46.6101910862598!3d-23.6027883597688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94ce5d0dedc7ec5d%3A0xb59f5577f9728b75!2sAv.%20do%20Orat%C3%B3rio%2C%204869%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!3m2!1d-23.6028101!2d-46.5277895!5e0!3m2!1spt-BR!2sbr!4v1733151926301!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contato__container">
+            <h1>Fale Conosco</h1>
+            <article class="contato">
+                <a href="https://wa.me/551123628799" target="_blank">
+                    <div class="contato__whats">
+                        <img src="img/icones/whats-cinza.png" alt="icone whatsapp">
+                        <p>WhatsApp</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/oticasvizz/" target="_blank">
+                    <div class="contato__insta">
+                        <img src="img/icones/insta-cinza.png" alt="icone instagram">
+                        <p>Instagram</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank">
+                    <div class="contato__face">
+                        <img src="img/icones/face-cinza.png" alt="icone facebook">
+                        <p>Facebook</p>
+                    </div>
+                </a>
+            </article>
+            <p>Tire sua dúvidas ou nos dê seu feedback! <br>Sua opinião é muito valiosa para nós.</p>
+        </section>
     </main>
     <footer>
 

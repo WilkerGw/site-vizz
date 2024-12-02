@@ -1,57 +1,53 @@
- .carousel__promocional__container {
-    background-color: var(--cor-fundo);
-    padding-bottom: 1rem;
- }
+.carousel__promocional__container {
+  background-color: var(--cor-fundo);
+  padding-bottom: 1rem;
+}
  
- .carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+  
+.carousel-track {
+  display: flex;
+  width: calc(1080px * 6); /* 3 imagens originais + 3 clones */
+  animation: scroll 50s linear infinite;
+}
+  
+.carousel-track img {
+  width: 1080px;
+  height: 300px;
+  object-fit: cover;
+}
+  
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3240px); /* Move 3 imagens para a esquerda */
+  }
   }
   
-  .carousel-track {
-    display: flex;
-    width: calc(1080px * 6); /* 3 imagens originais + 3 clones */
-    animation: scroll 50s linear infinite;
-  }
-  
-  .carousel-track img {
-    width: 1080px;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-3240px); /* Move 3 imagens para a esquerda */
-    }
+  .mobi {
+    display: none;
   }
 
   /*RESPONSIVO PARA MOBILE*/
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .carousel__promocional__container{
+    margin-top: 2rem;
   }
 
+  .desk{
+    display: none;
+  }
+  .mobi {
+    display: block;
+  }
 
-  /*RESPOMSIVO PARA TABLETS*/
-
-  @media (min-width: 601px) and (max-width: 1024px) {}
+}
   

@@ -20,6 +20,11 @@ h1 {
     font-size: 1.8rem;
 }
 
+h2 {
+    opacity: 80%;
+    font-size: 1.3rem;
+}
+
 section {
     background-color: var(--cor-fundo);
 }
