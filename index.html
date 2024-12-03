@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/endereco.css">
     <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/destaque.css">
+    <script src="scripts/anima-scroll.js" defer></script>
     <script src="script.js" defer ></script>
     <script src="scripts/menu.js" defer ></script>
     <script src="scripts/sub-menu.js" defer ></script>
@@ -22,7 +23,9 @@
 </head>
 <body>
     <header>
-        <img src="img/header/header-logo.png" alt="Logotipo da ótica" class="header__logo">
+        <a href="#main">
+            <img src="img/header/header-logo.png" alt="Logotipo da ótica" class="header__logo">
+        </a>
         <ul class="header__menu__principal">
             <a href="#main">
                 <li>Inicio</li>
@@ -71,8 +74,8 @@
                     <li>Termos de Uso</li>
                 </ul>
         </ul>
-        <img src="img/header/header-img-whats.png" alt="icone whatsapp" class="header__icone__whats">
-        <img src="img/icones/menu.png" alt="icone de menu" class="header__icone__menu">
+        <a href="https://wa.me/551123628799"><img src="img/header/header-img-whats.png" alt="icone whatsapp" class="header__icone__whats"></a>
+        <img src="img/icones/cardapio.png" alt="icone de menu" class="header__icone__menu">
         <img src="img/icones/fechar.png" alt="icone de fechar" class="header__icone__fechar">
     </header>
     <main id="main">
@@ -87,7 +90,7 @@
                 <p>Avenida do Oratório, 4869, Vila Industrial <br> São Paulo - Sp</p>
             </a>
         </section>
-        <section class="carousel__promocional__container">
+        <section class="carousel__promocional__container hidden">
             <div class="carousel">
                 <div class="carousel-track">
                     <img src="img/banners/1.png" alt="Imagem 1 desk" class="desk">
@@ -105,37 +108,37 @@
                 </div>
               </div>
         </section>
-        <section class="designe__container">
+        <section class="designe__container hidden">
             <h1>Designe</h1>
             <p>Escolha o o modelo que mais combina com você!</p>
             <div class="designe__img__container">
-                <div>
+                <div class="hidden">
                     <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/arredondados/" target="_blank"><img src="img/designe/designe1.png" alt="imagem oculos redondo" class="designe__img"></a>
                     <p>Redondos</p>
                 </div>
-                <div>
+                <div class="hidden">
                     <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/quadrados/" target="_blank"><img src="img/designe/designe2.png" alt="imagem oculos quadrado" class="designe__img"></a>
                     <p>Quadrados</p>
                 </div>
-                <div>
+                <div class="hidden">
                     <a href="https://oticasvizz.lojavirtualnuvem.com.br/oculos-de-sol/gatinho/" target="_blank"><img src="img/designe/designe3.png" alt="imagem oculos em formato gatinho" class="designe__img"></a>
                     <p>Gatinho</p>
                 </div>
             </div>
         </section>
-        <section class="destaque__oculos__container">
+        <section class="destaque__oculos__container hidden">
             <div class="destaque__titulo">
-                <h1>Óculos de Sol com proteção UV400 Vizz Holanda</h1>
-                <img src="img/destaque/p2.png" alt="imagem modelo oculos de sol Holanda">
+                <h1 class="hidden">Óculos de Sol com proteção UV400 Vizz Holanda</h1>
+                <img class="hidden" src="img/destaque/p2.png" alt="imagem modelo oculos de sol Holanda">
             </div>
             <div class="destaque__img__container">
                 <div class="destaque__img__extra">
-                    <img src="img/destaque/p3.png" alt="" class="img__extra">
-                    <img src="img/destaque/p8.png" alt="" class="img__extra">
-                    <img src="img/destaque/p4.png" alt="" class="img__extra">
-                    <img src="img/destaque/p7.png" alt="" class="img__extra">
-                    <img src="img/destaque/p5.png" alt="" class="img__extra">
-                    <img src="img/destaque/p6.png" alt="" class="img__extra">
+                    <img src="img/destaque/p3.png" alt="" class="img__extra hidden">
+                    <img src="img/destaque/p8.png" alt="" class="img__extra hidden">
+                    <img src="img/destaque/p4.png" alt="" class="img__extra hidden">
+                    <img src="img/destaque/p7.png" alt="" class="img__extra hidden">
+                    <img src="img/destaque/p5.png" alt="" class="img__extra hidden">
+                    <img src="img/destaque/p6.png" alt="" class="img__extra hidden">
                 </div>
                 <img src="img/destaque/p4.png" alt="" class="img__destaque">
                 <div class="destaque__descricao">
@@ -152,10 +155,10 @@
                     Experimente a fusão perfeita entre moda e funcionalidade com os óculos de sol Vizz Holanda!
                 </div>
             </div>
-            <img src="img/destaque/p1.png" alt="" class="destaque__img_final">
+            <img src="img/destaque/p1.png" alt="" class="destaque__img_final hidden">
             <p>Holanda é o modelo perfeito para quem sabe que óculos de Sol é pra qualquer momento! <br>O queridinho da balada com o melhor preço da região.</p>
         </section>
-        <scetion class="horario__container">
+        <scetion class="horario__container hidden">
             <article class="horario">
                 <img src="img/icones/relogio.png" alt="icone relogio" class="icone__relogio">
                 <h1>Horario de funcionamento</h1>
@@ -176,7 +179,7 @@
                 </iframe>
             </article>
         </scetion>
-        <section id="endereco__container">
+        <section id="endereco__container" class="hidden">
             <article class="endereco">
                 <img src="img/icones/mapa.png" alt="" class="icone__mapa">
                 <h1>Endereço</h1>
@@ -189,19 +192,19 @@
         <section id="contato__container">
             <h1>Fale Conosco</h1>
             <article class="contato">
-                <a href="https://wa.me/551123628799" target="_blank">
+                <a href="https://wa.me/551123628799" target="_blank" class="fale-whats hidden">
                     <div class="contato__whats">
                         <img src="img/icones/whats-cinza.png" alt="icone whatsapp">
                         <p>WhatsApp</p>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/oticasvizz/" target="_blank">
+                <a href="https://www.instagram.com/oticasvizz/" target="_blank" class="fale-insta hidden">
                     <div class="contato__insta">
                         <img src="img/icones/insta-cinza.png" alt="icone instagram">
                         <p>Instagram</p>
                     </div>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank" class="fale-face hidden">
                     <div class="contato__face">
                         <img src="img/icones/face-cinza.png" alt="icone facebook">
                         <p>Facebook</p>

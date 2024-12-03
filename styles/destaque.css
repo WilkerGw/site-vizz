@@ -4,12 +4,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .destaque__oculos__container {
     text-align: center;
+}
+
+.destaque__titulo {
+    height: auto;
 }
 
 .destaque__titulo img {
@@ -55,8 +59,18 @@
 
 .destaque__img_final {
     width: 40%;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
+
+
+.destaque__img__extra :nth-child(1){transition-delay: 400ms;}
+.destaque__img__extra :nth-child(2){transition-delay: 700ms;}
+.destaque__img__extra :nth-child(3){transition-delay: 1000ms;}
+.destaque__img__extra :nth-child(4){transition-delay: 1200ms;}
+.destaque__img__extra :nth-child(5){transition-delay: 1400ms;}
+.destaque__img__extra :nth-child(6){transition-delay: 1700ms;}
+
+
 
 @media (max-width: 600px) {
     .destaque__oculos__container{
@@ -100,6 +114,7 @@
 
     .destaque__img_final {
         width: 100%;
+        margin-top: 1rem;
     }
 }
 

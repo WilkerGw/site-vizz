@@ -40,3 +40,7 @@
     align-items: center;
 }
 
+.fale-face {transition-delay: 400ms;}
+.fale-insta {transition-delay: 700ms;}
+.fale-whats {transition-delay: 1000ms;}
+

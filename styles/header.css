@@ -16,7 +16,7 @@ header {
 header ul li {
     cursor: pointer;
     opacity: 80%;
-    margin-inline: 1rem;
+    margin-left: 1rem;
 }
 
 header ul li:hover {
@@ -49,9 +49,12 @@ header ul li:hover {
 .header__menu__sol, .header__menu__grau, .header__info__legais {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
     display: none;
     width: 100%;
+}
+
+.header__menu__sol li, .header__menu__grau li, .header__info__legais li{
+    display: flex;
 }
 
 .header__icone__fechar, .header__icone__menu {
@@ -94,11 +97,24 @@ header ul li:hover {
     header {
         padding: 0rem 0rem 1rem 1rem;
         justify-content: space-between;
+        margin: 0;
+        padding: .5rem 0rem .5rem 1rem;
+        font-size: 1.5rem;
     }
 
     .header__menu__principal {
         gap: 0.5rem;
         flex-direction: column;
+        background-color: var(--cinza-principal);
+        padding-bottom: 1rem;
+    }
+
+    header ul li {
+        margin: 0;
+    }
+
+    .header__menu__principal li, .header__menu__principal a {
+        width: 100%;
     }
 
     .header__menu__principal, .header__icone__whats {
@@ -133,6 +149,8 @@ header ul li:hover {
     .header__menu__grau,
     .header__info__legais {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .header__menu__sol li,
@@ -140,6 +158,13 @@ header ul li:hover {
     .header__info__legais li {
         width: 100%;
         color: var(--amarelo-submenu);
+    }
+
+    .li__sol, .li__grau, .li__legais {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
     }
 
 }
