@@ -19,6 +19,10 @@
     padding-bottom: 1rem;
 }
 
+.redes__link__i {transition-delay: 400ms;}
+.redes__link__w {transition-delay: 700ms;}
+.redes__link__f {transition-delay: 1000ms;}
+
 .redes__icone {
     width: 2rem;
     opacity: 70%;
