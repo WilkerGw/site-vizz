@@ -43,7 +43,16 @@ section {
     transition: all 1s;
 }
 
+section {
+    height: 100vh;
+}
+
+.banner__principal__container {
+    height: auto;
+}
+
 @media (max-width: 600px) {
-    main {
+    section {
+        height: auto;
     }
 }

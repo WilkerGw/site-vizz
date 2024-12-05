@@ -1,6 +1,11 @@
 .carousel__promocional__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--cor-fundo);
   padding-bottom: 1rem;
+  height: 70vh;
 }
  
 .carousel {
@@ -32,6 +37,12 @@
   
   .mobi {
     display: none;
+  }
+
+  .carousel__promocional__container > p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1rem;
   }
 
   /*RESPONSIVO PARA MOBILE*/

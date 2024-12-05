@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .destaque__oculos__container {
     text-align: center;
+    justify-content: center;
 }
 
 .destaque__titulo {
@@ -17,7 +17,7 @@
 }
 
 .destaque__titulo img {
-    width: 40rem;
+    width: 20rem;
 }
 
 .destaque__img__container {
@@ -28,8 +28,23 @@
 }
 
 .img__destaque {
-    width: 30rem;
+    width: 15rem;
 }
+
+.btn__saibamais {
+    border:  none;
+    font-size: 1.3rem;
+    font-family: 'Poiret One', sans-serif;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.btn__saibamais:hover{
+    background-color: var(--cinza-principal);
+    color: white;
+    border-radius: .2rem;
+}
+
 .destaque__img__extra {
     display: flex;
     flex-direction: column;
@@ -58,7 +73,7 @@
 }
 
 .destaque__img_final {
-    width: 40%;
+    width: 15rem;
     margin-top: 1rem;
 }
 
@@ -69,8 +84,6 @@
 .destaque__img__extra :nth-child(4){transition-delay: 1200ms;}
 .destaque__img__extra :nth-child(5){transition-delay: 1400ms;}
 .destaque__img__extra :nth-child(6){transition-delay: 1700ms;}
-
-
 
 @media (max-width: 600px) {
     .destaque__oculos__container{

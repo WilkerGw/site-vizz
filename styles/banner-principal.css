@@ -51,4 +51,8 @@
         width: 8rem;
     }
     
+.banner__principal__container p {
+    font-size: .8rem;
+}
+    
 }
