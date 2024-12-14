@@ -1,0 +1,79 @@
+.footer-container {
+    background-color: #2e2e2e;
+    color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    color: #ffdd56;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    background-color: #222;
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.payment-methods {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-section ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section p, .footer-section ul li {
+        font-size: 14px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+}

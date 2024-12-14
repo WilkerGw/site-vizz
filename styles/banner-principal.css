@@ -1,0 +1,44 @@
+.banner__principal__container {
+    background-color: var(--cinza-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+
+.banner__principal__logo {
+    width: 20rem;
+    opacity: 80%;
+}
+
+.banner__principal__redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+.redes__link__i {transition-delay: 400ms;}
+.redes__link__w {transition-delay: 700ms;}
+.redes__link__f {transition-delay: 1000ms;}
+
+.redes__icone {
+    width: 2rem;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.redes__icone:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+@media (max-width: 600px) {
+
+    .banner__principal__logo {
+        width: 13rem;
+    }
+
+    
+}

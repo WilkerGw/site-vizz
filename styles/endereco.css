@@ -1,0 +1,59 @@
+#endereco__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+.endereco__container p {
+    color: var(--amarelo-principal);
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.icone__mapa {
+    width: 3rem;
+    align-self: center;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
+    padding: .3rem;
+    background-color: var(--cor-fundo);
+}
+
+#endereco__container iframe {
+    box-shadow: 0 0 10px var(--cinza-principal); /* Efeito de sombra esfumaçada */
+    width: 45rem;
+    height: 15rem;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+
+    #endereco__container {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #endereco__container iframe {
+        width: 90%;
+        box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+        border-radius: .5rem;
+        height: 70vh;
+    }
+
+     .endereco {
+     }
+}

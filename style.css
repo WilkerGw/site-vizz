@@ -1,0 +1,124 @@
+:root {
+    --cinza-principal: #2e2e2e;
+    --cor-sombra: #2e2e2e39;
+    --amarelo-principal: #ffdd56;
+    --amarelo-submenu: #f4e6af;
+    --cor-fundo: #eeeeee;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    opacity: 80%;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+h2 {
+    opacity: 80%;
+    font-size: 1.3rem;
+}
+
+p {
+    opacity: 70%;
+    font-weight: 200;
+}
+
+ul li {
+    opacity: 70%;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    color: var(--amarelo-principal);
+    font-weight: 100;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+section {
+    background-color: var(--cor-fundo);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section {
+}
+
+.banner__principal__container {
+    height: auto;
+}
+
+.linha {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;
+    width: 60rem;
+    height: 30rem;
+    position: absolute;
+}
+
+.linha2 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 60rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linha3 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 60rem;
+    height: 21rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linha4 {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
+    border-radius: .5rem;    width: 25rem;
+    height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 600px) {
+ .linha, .linha2, .linha3, .linha4 {
+    width: 100%;
+    display: none;
+ }
+}
