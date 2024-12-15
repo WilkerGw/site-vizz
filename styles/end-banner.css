@@ -31,6 +31,8 @@
       padding-inline: 1rem;
       align-items: center;
       justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     #address {

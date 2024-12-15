@@ -95,7 +95,8 @@ section {
 .linha3 {
     border: 1px solid transparent;
     box-shadow: 0 0 10px var(--cor-sombra); /* Efeito de sombra esfumaçada */
-    border-radius: .5rem;    width: 60rem;
+    border-radius: .5rem;    
+    width: 60rem;
     height: 21rem;
     position: absolute;
     top: 50%;
@@ -103,6 +104,7 @@ section {
     transform: translate(-50%, -50%);
     z-index: -1;
 }
+
 
 
 @media (max-width: 600px) {

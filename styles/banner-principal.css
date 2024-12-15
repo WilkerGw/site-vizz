@@ -7,8 +7,18 @@
 }
 
 .banner__principal__logo {
-    width: 20rem;
-    opacity: 80%;
+    width: 14rem;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 2s forwards; /* Aplica a animação fadeIn */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        opacity: 1; /* Finaliza totalmente visível */
+    }
 }
 
 .banner__principal__redes {
@@ -35,10 +45,7 @@
 }
 
 @media (max-width: 600px) {
-
     .banner__principal__logo {
         width: 13rem;
     }
-
-    
 }

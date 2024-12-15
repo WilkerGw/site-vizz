@@ -80,3 +80,7 @@
 .carousel-button.right {
   right: 10px;
 }
+
+@media (max-width:600px) {
+  
+}
